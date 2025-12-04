@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavelength ↔ Frequency ↔ Energy Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="project-title">GENERAL CHEMISTRY I - Outreach Project</div>
+            <h1>Wavelength ↔ Frequency ↔ Energy Converter</h1>
+        </header>
+
+        <div class="main-content">
+            <!-- Color Picker Spectrum -->
+            <section class="spectrum-section">
+                <div class="slide-hint">
+                    <span class="slide-icon">← →</span>
+                    <span class="slide-text">Slide me</span>
+                    <span class="range-text">200-800 nm</span>
+                </div>
+                <div class="spectrum-container" id="spectrumContainer">
+                    <div class="spectrum-bar" id="spectrumBar"></div>
+                    <div class="spectrum-marker" id="spectrumMarker"></div>
+                </div>
+                <div class="spectrum-info">
+                    <span id="spectrumWavelength">550 nm</span>
+                </div>
+            </section>
+
+            <!-- Calculator Inputs -->
+            <section class="calculator-section">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="wavelength">Wavelength (λ) <span class="range-hint">(200-800 nm)</span></label>
+                        <input type="number" id="wavelength" placeholder="550" step="0.1" min="200" max="800">
+                        <span class="unit">nm</span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="frequency">Frequency (ν)</label>
+                        <input type="number" id="frequency" placeholder="545.45" step="0.1">
+                        <span class="unit">THz</span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="energy">Energy (E)</label>
+                        <input type="number" id="energy" placeholder="2.25" step="0.01">
+                        <span class="unit">eV</span>
+                    </div>
+                </div>
+
+                <div class="color-display">
+                    <div class="color-box" id="colorBox"></div>
+                    <div class="color-info">
+                        <div id="colorName">Green</div>
+                        <div id="colorValues"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div><strong>Name:</strong> Rahul Arora</div>
+                    <div><strong>Professor:</strong> Gerard Parkin</div>
+                </div>
+                <div class="footer-contact">
+                    For inquiries: <a href="mailto:arora.rahul@columbia.edu">arora.rahul@columbia.edu</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
